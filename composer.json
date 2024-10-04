@@ -1,0 +1,23 @@
+{
+    "name": "bbaba/terangaphp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Bba\\Terangaphp\\": "src/",
+            "Bba\\Models\\": "src/models/",
+            "Bba\\Controllers\\": "src/controllers/",
+            "Bba\\Core\\Validator\\": "src/core/validator/",
+            "Bba\\Core\\Controller\\": "src/core/controller/",
+            "Bba\\Core\\Model\\": "src/core/model/",
+            "Bba\\Core\\Session\\": "src/core/session/",
+            "Bba\\Core\\Routeur\\": "src/core/routeur/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bbabadara",
+            "email": "bbabadara@gmail.com"
+        }
+    ],
+    "require": {}
+}
