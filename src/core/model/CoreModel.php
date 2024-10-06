@@ -51,4 +51,10 @@ class CoreModel
         return $this->doSelect($sql,  true);
     }
  
+    public function doUpdate($sql)
+    {
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+
+    }
 }

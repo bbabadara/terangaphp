@@ -28,6 +28,10 @@ class AvisModel extends CoreModel{
         $sql="SELECT * FROM `avis` a join `users` u on a.idu=u.idu join lois l on a.idl=l.idl" ;
        return parent::doSelect($sql);
     }
+    public function updateEtat($id,$etat){
+        $sql="UPDATE avis SET etata='$etat' WHERE ida=$id";
+        return parent::doUpdate($sql);
+    }
 
 }
     

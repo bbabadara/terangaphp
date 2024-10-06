@@ -15,6 +15,9 @@
 <h2 class="text-xl font-bold mt-6 mb-2">Actions</h2>
 <form action="" method="post" class="space-y-4">
     <div>
+        <input type="hidden" name="ida" value="<?= $avis->ida ?>">
+        <input type="hidden" name="controller" value="avis">
+        <input type="hidden" name="action" value="details">
         <button name="etat" value="approved" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">Approuver</button>
         <button name="etat" value="rejected" class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">Rejeter</button>
     </div>

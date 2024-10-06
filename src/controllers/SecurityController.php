@@ -43,7 +43,7 @@ class SecurityController  extends CoreController
                 $userConnect = $this->userModel->findUserConnect($login, $mdp);
                 if ($userConnect) {
                         $this->session->add("userConnect", $userConnect);
-                        parent::redirect("lois", "liste");     
+                        parent::redirect("lois", "liste");
                 } else {
                     $this->session->addAsoc("errors", "alert", "login ou mot de passe incorrect!");
                 }
